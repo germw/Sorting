@@ -29,18 +29,19 @@ module sorting_cell(
     input prev_state,
     input [31:0] new_data,
     output reg [31:0] cell_data,
-    output cell_push,
-    output reg cell_state
+    output reg cell_push,
+    output reg cell_state,
+    output wire accept_new
     );
     
-    parameter EMPTY = 0;
-    parameter OCCUPIED = 1;
+    parameter EMPTY = 1'b0;
+    parameter OCCUPIED = 1'b1;
     
     
-    wire accept_new;
+    //wire accept_new;
+    //condition of changing the element in the cell
     assign accept_new = (new_data[19:12] > cell_data[19:12])
-                        || ((new_data[19:12] == cell_data[19:12]) && (new_data[11:0] > new_data[11:0]))
-                        || (cell_state == EMPTY);
+    || ((new_data[19:12] == cell_data[19:12]) && (new_data[11:0] > cell_data[11:0]));
                         
     
     
@@ -50,7 +51,20 @@ module sorting_cell(
     
     
     //determine cell push
-    assign cell_push = (accept_new || prev_push) && (cell_state == OCCUPIED);
+    always @(posedge clk,posedge rst)
+    begin
+        if(rst)
+            cell_push <= 1'b0;
+        else if(en)
+        begin
+             if((accept_new || prev_push) && (cell_state == OCCUPIED))
+             cell_push <= 1'b1;
+             else
+             cell_push <=1'b0;
+        end
+    
+    end
+   
     
     //determine cell state
     always @(posedge clk, posedge rst)
@@ -81,13 +95,15 @@ module sorting_cell(
             cell_data <= 32'b0;
         else if (en) 
         begin
-            case(data_priority)
+            //accept_new,prev_push,cell_state,prev_state
+            casez(data_priority)
                 4'b?1?? : cell_data <= prev_data;
                 4'b101? : cell_data <= new_data;
-                4'b1001 : cell_data <= new_data;
+                4'b?001 : cell_data <= new_data;
                 default : cell_data <= cell_data;
             endcase
         end
         else cell_data <= cell_data;
     end
 endmodule
+
