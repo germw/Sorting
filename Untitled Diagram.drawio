@@ -1,1 +1,13 @@
-<mxfile host="www.draw.io" modified="2019-10-23T14:34:26.981Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36" etag="Cq02gEbCu381VX4AOYAI" version="12.1.4" type="github" pages="1"><diagram id="Sb4gesYFeaovI2J1ch-v" name="Page-1">7ZXfa9swEMf/GsP2YPCPzO1rnLRLWUsHKSvty1DisyWQLVdRErt//U6WFNsNWUuhg8JebOlzp7uTkO7rxbOy+S5JTW9EBtyLgqzx4rkXRWfJOX41aA2YJBMDCskyg8IeLNkzWBhYumUZbEaOSgiuWD2Ga1FVsFYjRqQU+7FbLvg4a00KOALLNeHH9J5lihp6/i3o+QJYQV3mMLCWkjhnCzaUZGI/QPGFF8+kEMqMymYGXJ+dOxez7vKE9VCYhEq9ZUFxfbf89XD9fP/440rSR7X47V/5iYmyI3xrN+xFCcd4aa1LVq09h+Rpq+tMSyILVnnxFK1B3eAXYbdbzX0lamObDGwKGuUTzgq7bo0Fg+xj4qiw/y7zyoFpxUrCHcadrV66IqtfMip15e4iuSTh6Xzv2imHXA22ehxb++YM9HXTXndtDX+r+iOK8NHwU4oVWTHOVHubzwEv5a2iIGdku8Fn9e8L+p/w8ycMdM/8HC+wBEVF9uXra48wGlUQ7UAqhiIwNV1r3vW11PawucmcCvTKedfSc4atNk5zUSkrYWFk55ekZFyL3wL4DnRUfUKq5NrpkFsnhOZkZw8PeoE6CwJ3JVt0cQvOrMRYjQ0ndr7vFStKLKMDtYqdyhKrksUhdi8kOLBa4qa9ZnW2gfDHF38A</diagram></mxfile>
+<mxfile host="www.draw.io" modified="2019-10-24T16:05:00.202Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:69.0) Gecko/20100101 Firefox/69.0" etag="HU5wfyB3FZo4A-Bbbs9h" version="12.1.4" type="github" pages="1">
+  <diagram id="Sb4gesYFeaovI2J1ch-v" name="Page-1">
+    <mxGraphModel dx="755" dy="463" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="gLTSVYLzWZKIrhZtH_-I-6" value="&lt;p style=&quot;margin: 0px ; margin-top: 4px ; text-align: center&quot;&gt;&lt;b&gt;Animal&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;-&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;- ProbabilityOfDeathOtherCauses&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;-&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;-&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;-&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;-&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;- age&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;+ method(): Type&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;" parent="1" vertex="1">
+          <mxGeometry x="170" y="140" width="260" height="310" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
